@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Resume</h1>
+        <form id="Editable Resume">
+            <h2>Personal Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <h2>Education</h2>
+            <label for="education">Education:</label>
+            <textarea id="education" required></textarea>
+            
+            <h2>Work Experience</h2>
+            <label for="work-experience">Work Experience:</label>
+            <textarea id="work-experience" required></textarea>
+
+            <h2>Skills</h2>
+            <label for="skills">Skills (comma separated):</label>
+            <input type="text" id="skills" required>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div id="resume output" class="resume-output"></div>
+    </div>
+    <script src="type.js"></script>
+</body>
+</html>
